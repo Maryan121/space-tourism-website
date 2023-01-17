@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Exo:wght@100&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0 2.5rem 3rem;
+    align-items: center;
+    position: relative;
+}
+hr{
+    position: absolute;
+    top: 5.2rem;
+    left: 12rem;
+    width: 37%;
+    border: none;
+    border-bottom: solid rgba(138, 138, 151, 0.68) 2px;
+}
+.a{
+    font-weight: bold;
+    margin-right: rem;
+}
+#menuIcon,#closeIcon{
+    display: none;
+}
+nav{
+    /* background-color: rgba(26, 24, 72, 0.572); */
+    /* background-color: #181d31c3; */
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    padding: 2.5rem 9rem;
+    filter: blur(.4px); 
+}
+ul{
+    display: flex;
+    gap: 1.3rem;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-size: .9rem;
+    text-transform: uppercase;
+    
+}
+
+a:hover, a:focus{
+    border-bottom: solid 2px #fff;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+.text-side{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: 39%;
+        
+}
+h1{
+    font-size: 9rem;
+    font-family:serif;
+}
+.b{
+    margin-bottom: -1.5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+p{
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: rgba(162, 162, 162, 0.811);
+}
+.explore{
+    background-color: white;
+    align-self: center;
+    color: black;
+    padding: 7rem 4rem;
+    border-radius: 100%;
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.pick-destination{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+.s{
+    color: gray;
+}
+
+@media(max-width:768px),(width:820px){
+    main{
+        flex-direction: column;
+        text-align: center;
+        gap: 11rem;
+    }
+    hr{
+        display: none;
+    }
+    
+    header{
+        padding: 0 0 2.5rem 3rem;
+
+    }
+    nav{
+        padding: 2.9rem 2rem;
+    }
+    .text-side{
+        width: auto;
+    }
+}
+@media(max-width: 414px){
+    
+    header{
+        flex-direction: column;
+        padding: 1rem 2rem;
+        margin: 0;
+        gap: 2rem;
+        width: 100%;
+    }
+   
+    .logo-sec{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #181d31;
+        display: none;
+    }
+    ul{
+        /* display: flex; */
+        flex-direction: column;
+        margin: 12rem 0 0 3rem;
+        gap: 2rem;
+    }
+    a,.a{
+        font-size: 1.5rem;
+        font-family:sans-serif;
+        letter-spacing: .2px;
+    }
+    a:hover,a:focus{
+        border: none;
+        color: rgb(139, 139, 139);
+    }
+   
+    #menuIcon{
+        display: flex;
+    }
+    main{
+        padding: 2.4rem;
+        margin-top: 4rem;
+        gap: 3.3rem;
+    }
+
+    .text-side{
+        width: auto;
+    }
+    h1{
+            font-size: 7rem;
+    }
+    .explore{
+        padding: 6rem 2.7rem;
+    }
+}
