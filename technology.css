@@ -1,0 +1,149 @@
+body{
+    background-image: url('starter-code/assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ul{
+    align-items: center;
+}
+main{
+    padding-right: 0;
+    gap: 1rem;
+}
+.min-cont{
+    display: flex;
+    gap:3rem;;
+    margin-top: 3rem;
+}
+img{
+    width: 100%;
+}
+.opts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.opt{
+    border: solid white 2px;
+    padding: 1.2rem 2rem;
+    border-radius: 60%;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+.opt:hover, .opt:focus{
+    background-color: #Fff;
+    color: #000;
+}
+.text-side{
+width: 50%;
+}
+.text :nth-child(2), :nth-child(3){
+    margin-top: .8rem;
+}
+.text :first-child{
+    text-transform: uppercase;
+}
+h1{
+    font-size:2.9rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.current{
+    background-color: white;
+    color: #000;
+}
+
+
+@media(max-width:768px),(width:820px){
+    body{
+        background-image: url('starter-code/assets/technology/background-technology-tablet.jpg');
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    main{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 0;
+    }
+    .min-cont{
+        position: absolute;
+        bottom: .5rem;
+        padding: 1rem 5rem;
+        left: 0;
+        flex-direction: column;
+    }
+    .opts{
+        flex-direction: row;
+        justify-content: center;
+    }
+   
+    .text-side{
+        justify-self: flex-start;
+    }
+  
+}
+@media(max-width: 414px){
+    body{
+        background-image: url('starter-code/assets/technology/background-technology-mobile.jpg');
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    main{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+    .text-side{
+        width: 100%;
+    }
+    .min-cont{
+        position: static;
+        padding: 1rem;
+        margin-top: 23rem;
+        z-index: 2;
+        flex-direction: column;
+    }
+    .opts{
+        position: absolute;
+        top: 29rem;
+        left: 5rem;
+        z-index: 1;
+    }
+    .opt{
+        padding: .8rem 1.4rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    img{
+        position: absolute;
+        top: 12rem;
+        left:3rem;
+        padding: 1rem;
+        width: 75%;
+        /* z-index: 1; */
+
+    }
+    .opts{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .text-side{
+        justify-self: flex-start;
+        padding: 0;
+    }
+    nav{
+        z-index: 10;
+    }
+    .logo-sec{
+        z-index: 11;
+    }
+
+  
+}
